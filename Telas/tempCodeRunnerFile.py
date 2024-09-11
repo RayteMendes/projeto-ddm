@@ -1,0 +1,1 @@
+image_path = "Telas\IMG\Memória.gif"

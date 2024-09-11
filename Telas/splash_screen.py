@@ -12,7 +12,7 @@ async def splash_screen(page: ft.Page, image_path=None):
     else:
         logo = ft.Image(src="assets/minha_imagem.png", width=500, height=500)  # Placeholder padrão
 
-    text = ft.Text("Carregando...", style=ft.TextThemeStyle.DISPLAY_LARGE, color="blue")
+    text = ft.Text("Carregando...",style=ft.TextThemeStyle.DISPLAY_SMALL,color="blue",font_family="Agrandir")
     progress_bar = ft.ProgressBar(width=200)
 
     # Adiciona os controles (imagem, barra de progresso, texto) na tela splash
