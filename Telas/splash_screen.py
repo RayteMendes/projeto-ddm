@@ -5,11 +5,18 @@ from home_screen import home_screen
 async def splash_screen(page: ft.Page, image_path=None):
     page.title = "Tela Splash"
     page.bgcolor = "#00193b"  # Define o fundo como branco
+<<<<<<< HEAD
     page.viewport_size = (360, 640) # Define o tamanho da tela
 
     # Centraliza a imagem, se um caminho foi fornecido
     if image_path:
         logo = ft.Image(src=image_path, width=300, height=300)
+=======
+
+    # Centraliza a imagem, se um caminho foi fornecido
+    if image_path:
+        logo = ft.Image(src=image_path, width=500, height=500)
+>>>>>>> 6599bf7dfc116f9fc07164b1ff9ba5dba3809e31
     else:
         logo = ft.Image(src="assets/minha_imagem.png", width=500, height=500)  # Placeholder padrão
 
@@ -42,4 +49,8 @@ async def splash_screen(page: ft.Page, image_path=None):
 
     # Após a splash screen, carrega a tela home
     from home_screen import home_screen
+<<<<<<< HEAD
     home_screen(page)
+=======
+    home_screen(page)
+>>>>>>> 6599bf7dfc116f9fc07164b1ff9ba5dba3809e31
